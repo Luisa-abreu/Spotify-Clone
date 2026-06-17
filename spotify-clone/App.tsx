@@ -1,21 +1,10 @@
-import { StyleSheet, View } from "react-native";
-import { Login } from "./src/pages/Login";
-import { Home } from "./src/pages/Home";
+import { NavigationContainer } from "@react-navigation/native";
+import { Routers } from "./src/routers";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Login />
-      {/* <Home /> */}
-    </View>
+    <NavigationContainer>
+      <Routers />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#121212",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

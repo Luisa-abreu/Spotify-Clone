@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+  page: {
+    flex: 1,
+    backgroundColor: "#121212",
+  },
   title: {
     fontSize: 24,
     fontWeight: 900,
@@ -26,7 +30,7 @@ export const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: 70,
-    backgroundColor: "#1e1e1e",
+    backgroundColor: "#0A1A38",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",

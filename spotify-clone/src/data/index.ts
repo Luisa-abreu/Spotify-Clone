@@ -57,7 +57,7 @@ export const Dados = [
     type: "album",
   },
   {
-    id: 9,
+    id: 10,
     title: "Taylor Swift",
     image:
       "https://cdn-p.smehost.net/sites/ef38b16bfa9341f8994dd4d1bbaa542a/wp-content/uploads/2022/10/62b33d12e2b9a033cf77585f6e3d4b2c6b3a63a1.jpeg",

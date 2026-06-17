@@ -8,30 +8,18 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
   },
   title: {
-    fontSize: 40,
+    fontSize: 30,
     color: "#FFF",
     fontWeight: 900,
     marginBottom: 30,
+    marginHorizontal: 40,
+    textAlign: "center",
   },
-  divisor: {
-    height: 1,
-    backgroundColor: "#fff",
-    width: "100%",
-    maxWidth: 500,
-    marginTop: 25,
-    marginBottom: 25,
-    opacity: 0.5,
-  },
+
   link: {
+    fontSize: 16,
     color: "#fff",
-    textDecorationLine: "underline",
     fontWeight: 700,
-  },
-  container: {
-    width: "100%",
-    maxWidth: 330,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
+    marginTop: 20,
   },
 });

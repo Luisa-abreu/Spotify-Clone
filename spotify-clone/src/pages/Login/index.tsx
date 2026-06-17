@@ -3,11 +3,17 @@ import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { styles } from "./style";
 import { useState } from "react";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { ParametroRotasStack } from "../../routers/navigation";
 
-export const Login = () => {
+type Props = {
+  navigation: NativeStackNavigationProp<ParametroRotasStack, "Login">;
+};
+
+export const Login = ({ navigation }: Props) => {
   const [ativo, setAtivo] = useState(false);
   return (
-    <>
+    <View style={styles.page}>
       <Text style={styles.title}>Log in to Spotify</Text>
 
       <Button text="Continue with Google" type="outline" icon="google" />
@@ -34,7 +40,11 @@ export const Login = () => {
         <Text style={{ color: "#fff", fontWeight: 700 }}>Remember me</Text>
       </View>
 
-      <Button text="Log in" type="solid" />
+      <Button
+        text="Log in"
+        type="solid"
+        onPress={() => navigation.navigate("Home")}
+      />
 
       <TouchableOpacity style={{ marginTop: 20 }}>
         <Text style={styles.link}>Forgot your Password?</Text>
@@ -48,6 +58,6 @@ export const Login = () => {
           <Text style={styles.link}>Sign up for Spotify</Text>
         </TouchableOpacity>
       </View>
-    </>
+    </View>
   );
 };

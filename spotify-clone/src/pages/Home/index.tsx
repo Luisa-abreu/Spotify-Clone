@@ -3,10 +3,12 @@ import { Dados } from "../../data";
 import { Prateleira } from "../../components/Prateleira";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useState } from "react";
 
 export const Home = () => {
+  const [pause, setPause] = useState(false);
   return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.page}>
       <View style={styles.header}>
         <Text style={styles.title}>Good morning</Text>
         <View style={styles.icons}>
@@ -45,7 +47,9 @@ export const Home = () => {
         </View>
 
         <View style={styles.controls}>
-          <Ionicons name="pause" size={20} color="white" />
+          <TouchableOpacity onPress={() => setPause(!pause)}>
+            <Ionicons name={pause ? "pause" : "play"} size={20} color="white" />
+          </TouchableOpacity>
         </View>
       </View>
     </View>
