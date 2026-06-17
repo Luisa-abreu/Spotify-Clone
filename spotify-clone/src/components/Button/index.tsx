@@ -7,8 +7,8 @@ import { FontAwesome } from "@expo/vector-icons";
 export const Button = ({ text, icon, type }: PropsButton) => {
   const icons = {
     facebook: <Ionicons name="logo-facebook" size={24} color="#1877F2" />,
-    apple: <Ionicons name="logo-apple" size={24} color="black" />,
-    google: <FontAwesome name="google" size={24} />,
+    apple: <Ionicons name="logo-apple" size={24} color="#fff" />,
+    google: <FontAwesome name="google" size={24} color="#fff" />,
   };
   return (
     <TouchableOpacity

@@ -6,8 +6,8 @@ export const styles = StyleSheet.create({
     maxWidth: 330,
     height: 49,
     borderRadius: 45,
-    marginTop: 6,
-    marginBottom: 6,
+    marginTop: 5,
+    marginBottom: 5,
     position: "relative",
     justifyContent: "center",
     alignItems: "center",
@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
 
   icon: {
     position: "absolute",
-    left: 16,
+    left: 25,
   },
   text: {
     fontWeight: "900",

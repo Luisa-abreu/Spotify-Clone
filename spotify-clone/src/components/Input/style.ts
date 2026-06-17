@@ -6,8 +6,8 @@ export const styles = StyleSheet.create({
     maxWidth: 330,
     height: 49,
     borderRadius: 5,
-    marginTop: 6,
-    marginBottom: 6,
+    marginTop: 8,
+    marginBottom: 8,
     borderColor: "#FFF",
     borderWidth: 0.7,
     color: "#fff",
@@ -18,6 +18,7 @@ export const styles = StyleSheet.create({
     width: "100%",
     maxWidth: 330,
     color: "#fff",
+    fontWeight: 700,
   },
 
   container: {
