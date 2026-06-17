@@ -31,7 +31,7 @@ InitialPage  →  Login  →  Home (Bottom Tabs)
 
 A navegação entre as telas é controlada pelos arquivos em `src/routers` (`stack.tsx` para a navegação em pilha e `tabs.tsx` para a navegação por abas inferiores).
 
-## 📁 Estrutura do projeto
+## Estrutura do projeto
 
 ```
 Spotify-Clone/
@@ -66,7 +66,7 @@ Spotify-Clone/
             └── image.d.ts      
 ```
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.dev/)
@@ -74,7 +74,7 @@ Spotify-Clone/
 - [React Navigation](https://reactnavigation.org/) (`native-stack` e `bottom-tabs`)
 - [@expo/vector-icons](https://docs.expo.dev/guides/icons/) (ícones Ionicons)
 
-## ▶️ Como executar o projeto
+## Como executar o projeto
 
 1. Clone o repositório:
    ```bash
@@ -103,6 +103,6 @@ Spotify-Clone/
    npm run web
    ```
 
-## 📌 Status do projeto
+## Status do projeto
 
 Projeto em desenvolvimento, com foco no **layout** das telas iniciais (Initial Page, Login e Home). A única navegação implementada até o momento é: Initial Page → Login (via botão "Log in") e Login → Home (via botão "Log in"). Não há autenticação real, integração com API ou persistência de dados — todo o conteúdo é estático/mockado. As abas Search, Library e Premium ainda são placeholders visuais e podem ser implementadas em versões futuras.
